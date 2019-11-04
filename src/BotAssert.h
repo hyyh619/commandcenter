@@ -8,10 +8,17 @@
 #include <ctime>
 #include <iomanip>
 
+// hy-orig
+//#ifdef WIN32
+//    #define BOT_BREAK __debugbreak();
+//#else
+//    #define BOT_BREAK ;
+//#endif
+
 #ifdef WIN32
-    #define BOT_BREAK __debugbreak();
+#define BOT_BREAK ;
 #else
-    #define BOT_BREAK ;
+#define BOT_BREAK ;
 #endif
 
 #if true
