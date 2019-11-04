@@ -7,6 +7,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CommandCenter", "CommandCen
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		asus-Debug|Win32 = asus-Debug|Win32
+		asus-Debug|x64 = asus-Debug|x64
+		asus-Debug|x86 = asus-Debug|x86
 		Debug|Win32 = Debug|Win32
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
@@ -15,6 +18,12 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4AC5062-8BEA-46D8-9231-57241C214F1C}.asus-Debug|Win32.ActiveCfg = asus-Debug|Win32
+		{D4AC5062-8BEA-46D8-9231-57241C214F1C}.asus-Debug|Win32.Build.0 = asus-Debug|Win32
+		{D4AC5062-8BEA-46D8-9231-57241C214F1C}.asus-Debug|x64.ActiveCfg = asus-Debug|x64
+		{D4AC5062-8BEA-46D8-9231-57241C214F1C}.asus-Debug|x64.Build.0 = asus-Debug|x64
+		{D4AC5062-8BEA-46D8-9231-57241C214F1C}.asus-Debug|x86.ActiveCfg = asus-Debug|Win32
+		{D4AC5062-8BEA-46D8-9231-57241C214F1C}.asus-Debug|x86.Build.0 = asus-Debug|Win32
 		{D4AC5062-8BEA-46D8-9231-57241C214F1C}.Debug|Win32.ActiveCfg = Debug|Win32
 		{D4AC5062-8BEA-46D8-9231-57241C214F1C}.Debug|Win32.Build.0 = Debug|Win32
 		{D4AC5062-8BEA-46D8-9231-57241C214F1C}.Debug|x64.ActiveCfg = Debug|x64
