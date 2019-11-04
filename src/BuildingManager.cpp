@@ -434,7 +434,9 @@ CCTilePosition BuildingManager::getBuildingLocation(const Building & b)
     }
 
     //In case of Protoss if there are no finished Pylons only a Pylon can be build.
-    if (m_bot.GetPlayerRace(Players::Self) == CCRace::Protoss)
+    // hy-orig: if (m_bot.GetPlayerRace(Players::Self) == CCRace::Protoss)
+    // The following code for BWAPI 4.2.0
+    if (m_bot.GetPlayerRace(Players::Self) == BWAPI::Races::Protoss)
     {
         size_t numPylons = m_bot.UnitInfo().getUnitTypeCount(Players::Self, Util::GetSupplyProvider(m_bot.GetPlayerRace(Players::Self), m_bot), true);
         if (numPylons == 0 && !b.type.isSupplyProvider())
