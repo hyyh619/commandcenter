@@ -1,6 +1,12 @@
 #include "GameCommander.h"
+#include "BWEM/src2/bwem.h"      // update the path if necessary
 #include "CCBot.h"
 #include "Util.h"
+
+namespace
+{ 
+    auto & theMap = BWEM::Map::Instance();
+}
 
 GameCommander::GameCommander(CCBot & bot)
     : m_bot                 (bot)
@@ -14,6 +20,31 @@ GameCommander::GameCommander(CCBot & bot)
 
 void GameCommander::onStart()
 {
+    try
+    {
+        // Retrieve you and your enemy's races. enemy() will just return the first enemy.
+        // If you wish to deal with multiple enemies then you must use enemies().
+        if (BWAPI::Broodwar->enemy()) // First make sure there is an enemy
+            BWAPI::Broodwar << "The matchup is " << BWAPI::Broodwar->self()->getRace() << " vs " << BWAPI::Broodwar->enemy()->getRace() << std::endl;
+
+        BWAPI::Broodwar << "Map initialization..." << std::endl;
+
+        theMap.Initialize(BWAPI::BroodwarPtr);
+        theMap.EnableAutomaticPathAnalysis();
+        bool startingLocationsOK = theMap.FindBasesForStartingLocations();
+        assert(startingLocationsOK);
+
+        BWEM::utils::MapPrinter::Initialize(&theMap);
+        BWEM::utils::printMap(theMap);      // will print the map into the file <StarCraftFolder>bwapi-data/map.bmp
+        BWEM::utils::pathExample(theMap);   // add to the printed map a path between two starting locations
+
+        BWAPI::Broodwar << "gg" << std::endl;
+    }
+    catch (const std::exception & e)
+    {
+        BOT_ASSERT("EXCEPTION: %s\n", e.what());
+    }
+
     m_productionManager.onStart();
     m_scoutManager.onStart();
     m_combatCommander.onStart();
@@ -62,7 +93,7 @@ void GameCommander::handleUnitAssignments()
 
 bool GameCommander::isAssigned(const Unit & unit) const
 {
-    return     (std::find(m_combatUnits.begin(), m_combatUnits.end(), unit) != m_combatUnits.end())
+    return (std::find(m_combatUnits.begin(), m_combatUnits.end(), unit) != m_combatUnits.end())
         || (std::find(m_scoutUnits.begin(), m_scoutUnits.end(), unit) != m_scoutUnits.end());
 }
 

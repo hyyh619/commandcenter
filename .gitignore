@@ -20,3 +20,5 @@ vs/RelWithDebInfo/CommandCenter.log
 *.pdb
 *.suo
 *.swp
+3rdparty/BWEM/build_vs2017/BWEM141/asus-Debug
+vs/asus-Debug
