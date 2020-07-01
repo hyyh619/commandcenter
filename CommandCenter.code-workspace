@@ -1,24 +1,24 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {},
-	"launch": {
-		"version": "0.2.0",
-		"configurations": [
-			{
-				"name": "(Windows) 启动",
-				"type": "cppvsdbg",
-				"request": "launch",
-				"program": "${workspaceFolder}/bin/CommandCenter_BWAPI_d.exe",
-				"args": [],
-				"stopAtEntry": false,
-				"cwd": "${workspaceFolder}",
-				"environment": [],
-				"externalConsole": false
-			}
-		]
-	}
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {},
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "(Windows) 启动",
+                "type": "cppvsdbg",
+                "request": "launch",
+                "program": "${workspaceFolder}/bin/CommandCenter_BWAPI_d.exe",
+                "args": [],
+                "stopAtEntry": false,
+                "cwd": "${workspaceFolder}",
+                "environment": [],
+                "externalConsole": false
+            }
+        ]
+    }
 }
