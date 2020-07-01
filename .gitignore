@@ -5,9 +5,12 @@ Makefile
 cmake_install.cmake
 
 # IDEs
-.vscode/
 vs/.vs/
 vs/commandcenter
+
+# vim
+*~
+*.swp
 
 bin/CommandCenter
 bin/*.exe
