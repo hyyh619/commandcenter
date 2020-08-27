@@ -27,3 +27,5 @@ vs/RelWithDebInfo/CommandCenter.log
 vs/asus-Debug
 3rdparty/BWEM/build_vs2017/BWEM141/Debug
 vs/Debug
+
+cscope*
