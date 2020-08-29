@@ -364,7 +364,7 @@ void BuildingManager::drawBuildingInformation()
     std::stringstream ss;
     ss << "Building Information " << m_buildings.size() << "\n\n\n";
 
-    int yspace = 0;
+    //int yspace = 0;
 
     for (const auto & b : m_buildings)
     {
@@ -435,8 +435,13 @@ CCTilePosition BuildingManager::getBuildingLocation(const Building & b)
 
     //In case of Protoss if there are no finished Pylons only a Pylon can be build.
     // hy-orig: if (m_bot.GetPlayerRace(Players::Self) == CCRace::Protoss)
+    
+#ifdef SC2API
+    if (m_bot.GetPlayerRace(Players::Self) == CCRace::Protoss)
+#else
     // The following code for BWAPI 4.2.0
     if (m_bot.GetPlayerRace(Players::Self) == BWAPI::Races::Protoss)
+#endif
     {
         size_t numPylons = m_bot.UnitInfo().getUnitTypeCount(Players::Self, Util::GetSupplyProvider(m_bot.GetPlayerRace(Players::Self), m_bot), true);
         if (numPylons == 0 && !b.type.isSupplyProvider())

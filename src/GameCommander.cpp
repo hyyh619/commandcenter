@@ -3,10 +3,12 @@
 #include "CCBot.h"
 #include "Util.h"
 
+#ifndef SC2API
 namespace
 { 
     auto & theMap = BWEM::Map::Instance();
 }
+#endif
 
 GameCommander::GameCommander(CCBot & bot)
     : m_bot                 (bot)
@@ -20,6 +22,7 @@ GameCommander::GameCommander(CCBot & bot)
 
 void GameCommander::onStart()
 {
+#ifndef SC2API
     try
     {
         // Retrieve you and your enemy's races. enemy() will just return the first enemy.
@@ -44,6 +47,7 @@ void GameCommander::onStart()
     {
         BOT_ASSERT("EXCEPTION: %s\n", e.what());
     }
+#endif
 
     m_productionManager.onStart();
     m_scoutManager.onStart();
