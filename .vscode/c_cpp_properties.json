@@ -5,7 +5,7 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/src",
-                "D:/Development/StarCraft/BWAPI-4.4.0/include",
+                "./3rdparty/BWAPI-4.4.0/include",
                 "/opt/local/include"
             ],
             "defines": [
