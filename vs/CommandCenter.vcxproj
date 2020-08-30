@@ -318,7 +318,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Development\hy_code\MachineLearning\StarCraft\commandcenter\3rdparty;D:\Development\StarCraft\BWAPI-4.4.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\3rdparty;..\3rdparty\BWAPI-4.4.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
@@ -349,7 +349,7 @@
     </Midl>
     <Link>
       <AdditionalOptions>%(AdditionalOptions)  /machine:x86 /ignore:4099</AdditionalOptions>
-      <AdditionalDependencies>D:\Development\StarCraft\BWAPI-4.4.0\Debug\BWAPILIB.lib;D:\Development\StarCraft\BWAPI-4.4.0\Debug\BWAPIClient.lib;D:\Development\hy_code\MachineLearning\StarCraft\commandcenter\vs\Debug\BWEM.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\3rdparty\BWAPI-4.4.0\bwapi-data\BWAPILIB.lib;..\3rdparty\BWAPI-4.4.0\bwapi-data\BWAPIClient.lib;.\Debug\BWEM.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
