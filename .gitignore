@@ -31,3 +31,4 @@ vs/Debug
 cscope*
 build
 3rdparty/bwapi-4.4.0/Documentation
+release/CommandCenter/CommandCenter.exe
