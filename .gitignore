@@ -34,3 +34,5 @@ build
 release/CommandCenter/CommandCenter.exe
 *.cd
 *.bsc
+*.lastcodeanalysissucceeded
+*.sdf
