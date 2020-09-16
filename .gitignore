@@ -36,3 +36,4 @@ release/CommandCenter/CommandCenter.exe
 *.bsc
 *.lastcodeanalysissucceeded
 *.sdf
+.ccls-cache
