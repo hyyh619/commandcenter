@@ -17,6 +17,20 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "lldb"
+        },
+        {
+            "name": "(visual debugger) 启动",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "./bin/CommandCenter_BWAPI_d.exe",
+            "args": [
+                "./release/CommandCenter/BotConfig.txt"
+            ],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb"
         }
     ]
 }
