@@ -82,6 +82,7 @@ void CCBot::setUnits()
         m_allUnits.push_back(Unit(unit, *this));    
     }
 #else
+    /* hy: Get all active units to units queue. */
     for (auto & unit : BWAPI::Broodwar->getAllUnits())
     {
         m_allUnits.push_back(Unit(unit, *this));
