@@ -15,7 +15,7 @@
                 "program": "${workspaceFolder}/bin/CommandCenter_BWAPI_d.exe",
                 "args": [],
                 "stopAtEntry": false,
-                "cwd": "${workspaceFolder}",
+                "cwd": "${workspaceFolder}/bin/",
                 "environment": [],
                 "externalConsole": false
             }

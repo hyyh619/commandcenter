@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CommandCenter", "CommandCenter.vcxproj", "{D4AC5062-8BEA-46D8-9231-57241C214F1C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{689D5AA1-419F-43AD-9CFF-4571F2A39F81} = {689D5AA1-419F-43AD-9CFF-4571F2A39F81}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BWEM", "..\3rdparty\BWEM\build_vs2017\BWEM141\BWEM141.vcxproj", "{689D5AA1-419F-43AD-9CFF-4571F2A39F81}"
 EndProject

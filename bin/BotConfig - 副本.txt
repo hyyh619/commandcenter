@@ -72,9 +72,9 @@
             "Protoss_ZealotRush"    : 
             { 
                 "Race"              : "Protoss", 
-                "OpeningBuildOrder" : ["Probe", "Probe", "Probe", "Probe", "Pylon", "Probe", "Gateway", "Gateway", "Probe", "Probe", "Zealot", "Pylon", "Zealot", "Zealot",  "Probe", "Zealot", "Zealot", "Probe", "Pylon", "Zealot", "Gateway", "Probe", "Pylon", "Probe", "Zealot", "Probe", "Zealot", "Zealot", "Zealot", "Zealot", "Pylon", "Probe", "Zealot", "Zealot", "Zealot",  "Cannon", "Cannon", "Pylon", "Cannon", "Cannon", "Pylon", "Cannon", "Cannon", "Pylon", "Cannon", "Cannon", "Pylon", "Cannon", "Cannon", "Pylon", "Cannon", "Cannon", "Pylon", "Cannon", "Cannon", "Pylon", "Cannon", "Cannon", "Pylon", "Cannon", "Cannon", "Pylon", "Cannon", "Cannon", "Pylon", "Cannon", "Cannon", "Pylon", "Cannon", "Cannon", "Pylon", "Cannon", "Cannon", "Pylon", "Cannon", "Cannon", "Pylon", "Cannon", "Cannon"],
+                "OpeningBuildOrder" : ["Probe", "Probe", "Probe", "Probe", "Pylon", "Probe", "Gateway", "Gateway", "Probe", "Probe", "Zealot", "Pylon", "Zealot", "Zealot",  "Probe", "Zealot", "Zealot", "Probe", "Pylon", "Zealot", "Gateway", "Probe", "Pylon", "Probe", "Zealot", "Probe", "Zealot", "Zealot", "Zealot", "Zealot", "Pylon", "Probe", "Zealot", "Zealot", "Zealot" ],
                 "ScoutCondition"    : [ ["Self", "Pylon"], ">", [ 0 ] ],
-                "AttackCondition"   : [ ["Self", "Zealot"], ">=", [ 4 ] ]
+                "AttackCondition"   : [ ["Self", "Zealot"], ">=", [ 3 ] ]
             },
             "Protoss_DragoonRush"   : 
             { 
